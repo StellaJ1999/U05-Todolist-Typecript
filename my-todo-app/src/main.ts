@@ -17,7 +17,7 @@ function addTodo(): void {
   if (todoInput.value.trim() === "") return;
 
   const newTodo: Todo = {
-    id: Date.now().toString(),
+    id: crypto.randomUUID(),
     text: todoInput.value,
     completed: false,
   };
