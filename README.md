@@ -6,11 +6,16 @@ ChoreQuest is a simple and elegant todo application built with Vite and TypeScri
 Features
 
 #User authentication (Sign up, Log in, Sign out)
+
 #Add, delete, and clear todos
+
 #Data persistence with Supabase
+
 #Getting Started
+
 
 Prerequisites
 
 #Node.js and npm installed
+
 #Supabase account and project
