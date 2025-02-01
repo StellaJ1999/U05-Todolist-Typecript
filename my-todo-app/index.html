@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo-lista</title>
+    <title>Todo App with Auth</title>
     <link rel="stylesheet" href="/src/style.css">
-    <script type="module" src="/src/main.ts"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Tasks to do</h1>
+
+    <div id="auth-container" class="container">
+        <h1>ChoreQuest</h1>
+        <h3>Login / Signup</h3>
+        <form id="auth-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <div id="login-signup-btns">
+                <button type="submit">Sign Up</button>
+                <button type="button" id="login-btn">Log In</button>
+            </div>
+        </form>
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <div id="todo-container" class="container" style="display: none;">
+        <h1>ChoreQuest</h1>
         <form id="todo-form">
-            <input id="todo-input" type="text" placeholder="Add a task..." required>
-            <button type="submit">Add</button>
+            <input type="text" id="todo-input" placeholder="Enter a new todo" required>
+            <button type="submit">Add Todo</button>
         </form>
         <ul id="todo-list"></ul>
-        <button id="clear-list">Clear List</button>
+        <button id="clear-list">Clear All Todos</button>
+        <button id="sign-out">Sign Out</button>
     </div>
+
+    <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
-
